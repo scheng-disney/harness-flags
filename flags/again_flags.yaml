@@ -3,7 +3,7 @@ featureFlags:
   - flag:
       name: My_Test_Flag
       identifier: My_Test_Flag
-      description: ""
+      description: "new description"
       permanent: false
       spec:
         type: boolean
@@ -17,6 +17,11 @@ featureFlags:
           value: "false"
       environments:
       - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: latest
         default:
           onVariation: "true"
           offVariation: "false"

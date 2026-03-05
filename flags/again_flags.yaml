@@ -3,7 +3,7 @@ featureFlags:
   - flag:
       name: My_Test_Flag
       identifier: My_Test_Flag
-      description: "new description"
+      description: ""
       permanent: false
       spec:
         type: boolean
@@ -18,12 +18,7 @@ featureFlags:
       environments:
       - identifier: test
         default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "off"
-      - identifier: latest
-        default:
-          onVariation: "true"
+          onVariation: "false"
           offVariation: "false"
         state: "off"
   projectIdentifier: harnessflags

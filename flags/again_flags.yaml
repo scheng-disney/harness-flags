@@ -1,8 +1,8 @@
 featureFlags:
   flags:
   - flag:
-      name: My_Test_Flag
-      identifier: My_Test_Flag
+      name: My_Test_Flag_new
+      identifier: My_Test_Flag_new_id
       description: ""
       permanent: false
       spec:

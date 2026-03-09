@@ -21,5 +21,33 @@ featureFlags:
           onVariation: "false"
           offVariation: "false"
         state: "off"
+  - flag:
+      name: test3
+      identifier: test3
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      tags:
+      - tag:
+          name: a
+          identifier: a
+      - tag:
+          name: b
+          identifier: b
+      environments:
+      - identifier: test
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
   projectIdentifier: harnessflags
   orgIdentifier: default

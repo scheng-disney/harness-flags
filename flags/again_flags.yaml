@@ -49,5 +49,33 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+  - flag:
+      name: test-multivariant
+      identifier: testmultivariant
+      description: ""
+      permanent: false
+      spec:
+        type: string
+        default:
+          onVariation: a
+          offVariation: b
+        variations:
+        - identifier: a
+          value: a
+        - identifier: b
+          value: b
+      tags:
+      - tag:
+          name: b
+          identifier: b
+      - tag:
+          name: a
+          identifier: a
+      environments:
+      - identifier: test
+        default:
+          onVariation: a
+          offVariation: b
+        state: "off"
   projectIdentifier: harnessflags
   orgIdentifier: default

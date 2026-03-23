@@ -22,6 +22,27 @@ featureFlags:
           offVariation: "false"
         state: "off"
   - flag:
+      name: temp-mjp-flag-1
+      identifier: tempmjpflag1
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
       name: test3
       identifier: test3
       description: ""

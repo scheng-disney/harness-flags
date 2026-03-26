@@ -92,6 +92,27 @@ featureFlags:
           offVariation: "false"
         state: "off"
   - flag:
+      name: test-flag-123
+      identifier: testflag123
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
       name: test-multivariant
       identifier: testmultivariant
       description: ""

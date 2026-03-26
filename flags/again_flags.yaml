@@ -22,27 +22,6 @@ featureFlags:
           offVariation: Green
         state: "on"
   - flag:
-      name: my-test-flag-26
-      identifier: mytestflag26
-      description: ""
-      permanent: false
-      spec:
-        type: boolean
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        variations:
-        - identifier: "true"
-          value: "true"
-        - identifier: "false"
-          value: "false"
-      environments:
-      - identifier: test
-        default:
-          onVariation: "true"
-          offVariation: "false"
-        state: "on"
-  - flag:
       name: My_Test_Flag_new
       identifier: My_Test_Flag_new_id
       description: ""

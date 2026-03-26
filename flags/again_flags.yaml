@@ -60,9 +60,9 @@ featureFlags:
       environments:
       - identifier: test
         default:
-          onVariation: "false"
+          onVariation: "true"
           offVariation: "false"
-        state: "on"
+        state: "off"
   - flag:
       name: test3
       identifier: test3

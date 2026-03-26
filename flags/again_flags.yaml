@@ -1,6 +1,27 @@
 featureFlags:
   flags:
   - flag:
+      name: mjp-multivariate-test
+      identifier: mjpmultivariatetest
+      description: ""
+      permanent: false
+      spec:
+        type: string
+        default:
+          onVariation: Blue
+          offVariation: Green
+        variations:
+        - identifier: Blue
+          value: blue
+        - identifier: Green
+          value: green
+      environments:
+      - identifier: test
+        default:
+          onVariation: Blue
+          offVariation: Green
+        state: "off"
+  - flag:
       name: My_Test_Flag_new
       identifier: My_Test_Flag_new_id
       description: ""

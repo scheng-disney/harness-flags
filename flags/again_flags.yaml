@@ -1,6 +1,27 @@
 featureFlags:
   flags:
   - flag:
+      name: james-demo-1
+      identifier: jamesdemo1
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
       name: mjp-multivariate-test
       identifier: mjpmultivariatetest
       description: ""
